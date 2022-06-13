@@ -1,0 +1,4 @@
+ZSH=$HOME/.zsh
+source $ZSH/antigenrc.zsh
+source $ZSH/themes/p10k_prompt.zsh
+

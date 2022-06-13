@@ -1,0 +1,30 @@
+[core]
+    excludesfile = ~/.cvsignore
+    editor=vim
+[user]
+    email = faisalaljishi@outlook.com
+    name = Faisal A
+[push]
+    default = simple
+[commit]
+    verbose = 2
+[alias]
+    s       = status -s
+    st      = status -s
+    c       = commit
+    ci      = commit
+    co      = checkout
+    diff    = diff --color-words --ignore-space-at-eol
+    ds      = diff --staged
+    grep    = grep -iI
+    subup   = submodule update --init --recursive
+    subpull = submodule update --init --remote
+    ls      = log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+    lgr     = log --pretty=format:"%C(yellow)%h\\ %C(green)%ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short --graph
+[pull]
+    rebase = true
+[log]
+#    date = auto:human
+    date = unix
+[pager]
+	branch = false
