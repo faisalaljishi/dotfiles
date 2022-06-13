@@ -10,7 +10,7 @@ source $ZSH/antigen/antigen.zsh # Load Antigen
 
 antigen use oh-my-zsh # Yes, I want to use Oh My ZSH
 
-# Plugins 
+# Plugins
 antigen bundles <<EOBUNDLES
 aws
 command-not-found
@@ -35,16 +35,16 @@ zsh-users/zsh-history-substring-search
 #test
 0b10/cheatsheet
 aikow/zsh-auto-ls
-#djui/alias-tips
-sei40kr/zsh-fast-alias-tips
+djui/alias-tips
+#sei40kr/zsh-fast-alias-tips
 Valiev/almostontop
-gretzky/auto-color-ls
-yuhonas/zsh-ansimotd
+#gretzky/auto-color-ls
+yuhonas/zsh-ansimotd@main
 unixorn/autoupdate-antigen.zshplugin
-marlonrichert/zsh-autocomplete
-llahan23/zsh-colorls
+marlonrichert/zsh-autocomplete@main
+Kallahan23/zsh-colorls
 zdharma-continuum/fast-syntax-highlighting
-angyuheng/fz
+changyuheng/fz
 joshskidmore/zsh-fzf-history-search
 Aloxaf/fzf-tab
 bigH/git-fuzzy
@@ -52,12 +52,12 @@ bigH/git-fuzzy
 willghatch/zsh-saneopt
 zlsun/solarized-man
 valentinocossar/sublime
-jsahlen/tmux-vim-integration.plugin.zsh
+#jsahlen/tmux-vim-integration.plugin.zsh
 #softmoth/zsh-vim-mode
 skywind3000/z.lua
-lexiszamanidis/zsh-git-fzf
-#zsh-users/zsh-completions
-#lincheney/fzf-tab-completion
+alexiszamanidis/zsh-git-fzf
+zsh-users/zsh-completions
+lincheney/fzf-tab-completion
 
 
 EOBUNDLES
@@ -83,11 +83,13 @@ source $ZSH/themes/p10k.zsh
 
 # And lastly, apply the Antigen stuff
 antigen apply
+antigen cleanup
 
-source ~/.zsh/history.zsh
-source ~/.zsh/functions.zsh
 source ~/.zsh/aliases.zsh
 source ~/.zsh/exports.zsh
+source ~/.zsh/functions.zsh
+source ~/.zsh/history.zsh
+source ~/.zsh/rand.zsh
 if [ -e "$HOME/.zsh/local.zsh" ]; then # If local.zsh exists, source it
   source ~/.zsh/local.zsh
 fi

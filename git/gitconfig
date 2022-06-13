@@ -9,8 +9,8 @@
 [commit]
     verbose = 2
 [alias]
-    s       = status -s
-    st      = status -s
+    s       = status
+    st      = status -sb
     c       = commit
     ci      = commit
     co      = checkout
